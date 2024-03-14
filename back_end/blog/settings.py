@@ -88,9 +88,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'drf_blog',  # 数据库名称
-        'USER': 'root',  # MySQL用户名
+        'USER': 'Timerains',  # MySQL用户名
         'PASSWORD': 'fzl20010222',  # MySQL密码
-        'HOST': 'localhost',  # 数据库主机，如果在本地运行，通常是'localhost'
+        'HOST': 'Timerains.mysql.pythonanywhere-services.com',  # 数据库主机，如果在本地运行，通常是'localhost'
         'PORT': '3306',  # MySQL端口，默认是3306
     }
 }
