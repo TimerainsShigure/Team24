@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from rest_framework import routers
 from django.urls import re_path, include, path
 from rest_framework.urlpatterns import format_suffix_patterns
+from django.views.generic import TemplateView
 
 from api import views
 from django.contrib import admin
@@ -30,6 +31,7 @@ router.register(r'blogs', views.BlogViewSet, basename='blogs')
 router.register(r'comments', views.CommentViewSet, basename='comments')
 
 urlpatterns = [
+    path('', TemplateView.as_view(template_name='index.html')),
     re_path('admin/', admin.site.urls),
     path('', include(router.urls)),
     re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
