@@ -1,0 +1,1 @@
+function s(e){if(Object.keys(e).every(t=>!e[t]))return"";{let t=Object.keys(e).filter(r=>e[r]);return t.reduce((r,n,a)=>(t.length===a+1?r+=n+"="+e[n]:r+=n+"="+e[n]+"&",r),"?")}}function c(e){const t=e.getFullYear(),r=(e.getMonth()+1).toString().padStart(2,"0"),n=e.getDate().toString().padStart(2,"0");return`${t}-${r}-${n}`}export{c as f,s as p};
